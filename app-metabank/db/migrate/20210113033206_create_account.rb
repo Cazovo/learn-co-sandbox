@@ -1,3 +1,4 @@
+  
 class CreateAccount < ActiveRecord::Migration
     
     def change

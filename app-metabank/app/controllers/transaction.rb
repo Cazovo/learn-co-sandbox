@@ -7,4 +7,4 @@ class TransactionController < ApplicationController
          @transactions = account.transactions
       end
    end
-end   
+end 

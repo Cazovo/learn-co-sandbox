@@ -27,4 +27,4 @@ class UserController < ApplicationController
             redirect '/create_user'
         end
     end
-end     
+end 
