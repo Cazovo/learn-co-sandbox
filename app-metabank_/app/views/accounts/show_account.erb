@@ -1,0 +1,23 @@
+<div>
+  <h1>MetaBank</h1>
+</div>
+
+<div class='greeting'>
+    <h3> Welcome, <%=current_user.name%></h3>
+    <h5><%=@account.name%></h5>
+    
+    <table>
+    <tr>
+    <th>Date</th>
+    <th>Amount</th>
+    <th> Notes </th>
+    </tr>
+    <%@transactions.each do |transaction|%>
+      <tr>
+        <td><%=transaction.date%></td>
+        <td><%=transaction.amount%></td>
+        <td><%=transaction.notes%></td>
+      </tr>
+    <% end %>
+    </table>
+</div>
